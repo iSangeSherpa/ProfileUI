@@ -1,19 +1,21 @@
-//
-//  ViewController.swift
-//  ProfileUI
-//
-//  Created by Sange Sherpa on 11/05/2023.
-//
-
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
+    
+    var profileLabel : UILabel = {
+        let label = UILabel()
+        label.text = "Profile"
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .blue
+        
+        view.addSubview(profileLabel)
+        profileLabel.snp.make
     }
 
 
 }
-

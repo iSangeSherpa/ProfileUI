@@ -1,0 +1,6 @@
+framework module Pods_ProfileUI {
+  umbrella header "Pods-ProfileUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
